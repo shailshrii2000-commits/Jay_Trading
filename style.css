@@ -561,6 +561,38 @@ nav a.active {
   color: var(--yellow);
 }
 
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.social-icon {
+  width: 42px;
+  height: 42px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.16);
+  color: #fff;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
+  transition: transform 0.22s ease, background 0.22s ease, color 0.22s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-4px);
+  background: var(--yellow);
+  color: var(--red);
+}
+
+.social-icon svg,
+.whatsapp-float svg {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+}
+
 .footer-enquiry {
   display: grid;
   grid-template-columns: 1fr 1fr auto;
@@ -596,8 +628,6 @@ nav a.active {
   background: #25d366;
   color: #fff;
   text-decoration: none;
-  font-weight: 950;
-  font-size: 13px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.32);
   animation: pulse 1.8s infinite;
 }
