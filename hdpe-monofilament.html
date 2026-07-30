@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HDPE Monofilament Yarn – Jay Trading</title>
+<link rel="stylesheet" href="style.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:"Segoe UI",Roboto,Arial,sans-serif}
+body{background:linear-gradient(180deg,#fffdfa,#fff4d6);color:#222}
+
+/* ===== NAV OVERRIDES ===== */
+nav {
+  background: linear-gradient(90deg,#FFFF00 0%, #FFEE33 50%, #FFFF00 100%);
+  padding: 16px 36px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  border-radius:0 0 18px 18px;
+  box-shadow:0 6px 30px rgba(0,0,0,0.18);
+  position:sticky;
+  top:0;
+  z-index:1200;
+}
+
+h2{text-align:center;margin:30px 0;font-size:36px;color:#B00000;text-shadow:0 0 10px yellow;}
+
+/* ===== PRODUCT LAYOUT ===== */
+.product-wrapper{
+  max-width:1200px;
+  margin:auto;
+  display:flex;
+  gap:40px;
+  align-items:flex-start;
+  padding:20px;
+}
+
+/* ===== IMAGE SLIDER (LEFT) ===== */
+.gallery{flex:1}
+.main-img{
+  border-radius:18px;
+  border:8px solid #fff;
+  box-shadow:0 20px 50px rgba(0,0,0,.3);
+  position:relative;
+  overflow:hidden;
+}
+.main-img img{
+  width:100%;
+  height:420px;
+  object-fit:contain;
+}
+.img-arrow{
+  position:absolute;
+  top:50%;transform:translateY(-50%);
+  width:42px;height:42px;
+  background:#fff;
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;font-weight:900;
+}
+.img-arrow.left{left:10px}
+.img-arrow.right{right:10px}
+.img-arrow:hover{background:#E70114;color:#fff}
+
+.thumbs{
+  margin-top:16px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+.thumbs img{
+  width:80px;height:80px;
+  border-radius:10px;
+  border:3px solid #E70114;
+  cursor:pointer;
+  object-fit:cover;
+}
+
+/* ===== PRODUCT INFO (RIGHT) ===== */
+.product-info{
+  flex:1.2;
+  background:#fff;
+  padding:30px;
+  border-radius:22px;
+  box-shadow:0 20px 50px rgba(0,0,0,.2);
+}
+.product-info h3{
+  color:#E70114;
+  font-size:26px;
+  margin-bottom:12px;
+}
+.product-info p{
+  line-height:1.7;
+  margin-bottom:18px;
+  font-size:16px;
+}
+.product-info ul{
+  margin-left:20px;
+  margin-bottom:20px;
+}
+.product-info li{
+  margin-bottom:8px;
+}
+
+/* FAQ */
+.faq h4{
+  color:#B00000;
+  margin:16px 0 6px;
+}
+.faq p{
+  margin-left:10px;
+  font-size:15px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:900px){
+  .product-wrapper{flex-direction:column}
+  .main-img img{height:300px}
+}
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 14px;
+    padding: 14px 20px;
+  }
+  nav .brand { font-size: 18px; }
+  nav ul { flex-wrap: wrap; justify-content: center; gap: 10px; }
+  nav ul li a { padding: 8px 14px; font-size: 14px; }
+  .main-img img { height: 280px; }
+  .thumbs { justify-content: center; }
+  .thumbs img { width: 65px; height: 65px; }
+}
+@media (max-width: 480px) {
+  .main-img img { height: 240px; }
+  .img-arrow { width: 36px; height: 36px; font-size: 14px; }
+  .product-info { padding: 18px; }
+  .product-info h3 { font-size: 20px; }
+}
+</style>
+</head>
+
+<body style="background-color: #ffffff;">
+
+<nav>
+  <a class="brand" href="index.html">
+    <img src="logo.jpeg" alt="Jay Trading logo">
+    JAY TRADING
+  </a>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<h2>HDPE Monofilament Yarn</h2>
+
+<div class="product-wrapper">
+
+  <!-- LEFT IMAGE SLIDER -->
+  <div class="gallery">
+    <div class="main-img">
+      <div class="img-arrow left" onclick="prevImg()">◀</div>
+      <img id="currentImg" src="v1.jpeg">
+      <div class="img-arrow right" onclick="nextImg()">▶</div>
+
+    <div class="thumbs">
+      <img src="v1.jpeg" onclick="setImg(this.src)">
+      <img src="v2.jpeg" onclick="setImg(this.src)">
+      <img src="v3.jpeg" onclick="setImg(this.src)">
+      <img src="v4.jpeg" onclick="setImg(this.src)">
+      <img src="v5.jpeg" onclick="setImg(this.src)">
+      <img src="v6.jpeg" onclick="setImg(this.src)">
+      <img src="v7.jpeg" onclick="setImg(this.src)">
+      <img src="v8.jpeg" onclick="setImg(this.src)">
+      <img src="v9.jpeg" onclick="setImg(this.src)">
+      <img src="v10.jpeg" onclick="setImg(this.src)">
+      <img src="v11.jpeg" onclick="setImg(this.src)">
+      <img src="v13.jpeg" onclick="setImg(this.src)">
+      <img src="v14.jpeg" onclick="setImg(this.src)">
+    </div>
+
+  <!-- RIGHT CONTENT -->
+  <div class="product-info">
+    <h3>About This Product</h3>
+    <p>
+      Engineered for precision weaving, braiding, and knitting applications. Our HDPE Monofilament Yarn delivers uniform thickness and high break-load strength. Manufactured using premium-grade virgin polymer, it ensures long-lasting performance even in demanding environments.
+    </p>
+
+    <ul>
+      <li><strong>Applications:</strong> Fishing nets, agro-shade nets, anti-bird nets, sports nets, ropes, and industrial woven fabrics.</li>
+      <li><strong>Specifications:</strong> Available in custom Denier ranges, precise filament counts, and a broad spectrum of color-fast masterbatches.</li>
+      <li><strong>Material:</strong> 100% Virgin HDPE (High-Density Polyethylene)</li>
+      <li><strong>UV Stabilization:</strong> Available on request for outdoor applications</li>
+    </ul>
+
+    <p>
+      Trusted as an exporter, manufacturer, and supplier, Jay Trading guarantees consistent quality, safety, and efficiency for industrial applications worldwide.
+    </p>
+
+    <div class="faq">
+      <h4>FAQs</h4>
+
+      <h4>Q: What material is used?</h4>
+      <p>A: Premium 100% Virgin HDPE (High-Density Polyethylene).</p>
+
+      <h4>Q: What Denier ranges are available?</h4>
+      <p>A: Custom Denier ranges available to match your specific requirements.</p>
+
+      <h4>Q: Can I get custom colors?</h4>
+      <p>A: Yes, we offer a broad spectrum of color-fast masterbatches.</p>
+
+      <h4>Q: Is UV stabilization available?</h4>
+      <p>A: Yes, all products can be treated with advanced UV inhibitors for outdoor environments.</p>
+
+      <h4>Q: Do you support bulk export orders?</h4>
+      <p>A: Yes, we are equipped with infrastructure to fulfill large container-load commitments seamlessly.</p>
+    </div>
+
+</div>
+
+<footer class="contact-footer">
+  <div class="footer-container">
+    <div class="footer-box">
+      <h3>JAY TRADING</h3>
+      <p>Trusted Manufacturers &amp; Global Exporters of Industrial Polymer Products</p>
+      <p><strong>Phone / WhatsApp:</strong> [Insert Phone/WhatsApp]</p>
+      <p><strong>Email:</strong> [Insert Corporate Email Address]</p>
+      <p><strong>Office / Factory:</strong> [Insert Physical Location]</p>
+      <div class="footer-copy">&copy; 2026 Jay Trading. All Rights Reserved.</div>
+      <div class="social-links" aria-label="Social media links">
+        <a class="social-icon" href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.84c0-2.52 1.49-3.91 3.77-3.91 1.09 0 2.24.2 2.24.2v2.48h-1.26c-1.24 0-1.63.78-1.63 1.57v1.88h2.78l-.44 2.91h-2.34V22c4.78-.76 8.44-4.92 8.44-9.94z"/></svg></a>
+        <a class="social-icon" href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.75 2h8.5A5.76 5.76 0 0 1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 22h-8.5A5.76 5.76 0 0 1 2 16.25v-8.5A5.76 5.76 0 0 1 7.75 2zm0 2A3.75 3.75 0 0 0 4 7.75v8.5A3.75 3.75 0 0 0 7.75 20h8.5A3.75 3.75 0 0 0 20 16.25v-8.5A3.75 3.75 0 0 0 16.25 4h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.25-2.25a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z"/></svg></a>
+        <a class="social-icon" href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3V9zm7 0h3.83v1.64h.06c.53-.95 1.84-1.95 3.79-1.95 4.05 0 4.8 2.67 4.8 6.13V21h-4v-5.47c0-1.31-.02-2.99-1.82-2.99-1.83 0-2.11 1.43-2.11 2.9V21H10V9z"/></svg></a>
+        <a class="social-icon" href="https://wa.me/" target="_blank" aria-label="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.52 3.49A11.85 11.85 0 0 0 12.08 0C5.56 0 .25 5.31.25 11.83c0 2.08.54 4.12 1.58 5.91L.15 24l6.41-1.68a11.8 11.8 0 0 0 5.52 1.4h.01c6.52 0 11.83-5.31 11.83-11.83 0-3.16-1.23-6.13-3.4-8.4zM12.09 21.7h-.01a9.82 9.82 0 0 1-5-1.37l-.36-.21-3.8 1 1.01-3.7-.24-.38a9.8 9.8 0 0 1-1.5-5.21c0-5.42 4.42-9.83 9.86-9.83a9.8 9.8 0 0 1 9.84 9.89c0 5.4-4.41 9.81-9.8 9.81zm5.39-7.36c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.29-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.65-2.05-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.88 1.22 3.08c.15.2 2.1 3.21 5.09 4.5.71.31 1.27.49 1.7.63.71.23 1.36.2 1.87.12.57-.09 1.75-.72 2-1.41.25-.7.25-1.3.17-1.42-.08-.13-.27-.2-.57-.35z"/></svg></a>
+      </div>
+    <div class="footer-box">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-box">
+      <h3>Send Enquiry</h3>
+      <form class="footer-enquiry" action="mailto:[Insert Corporate Email Address]" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="tel" name="phone" placeholder="Phone / WhatsApp" required>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+</footer>
+
+<a href="https://wa.me/" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.52 3.49A11.85 11.85 0 0 0 12.08 0C5.56 0 .25 5.31.25 11.83c0 2.08.54 4.12 1.58 5.91L.15 24l6.41-1.68a11.8 11.8 0 0 0 5.52 1.4h.01c6.52 0 11.83-5.31 11.83-11.83 0-3.16-1.23-6.13-3.4-8.4zM12.09 21.7h-.01a9.82 9.82 0 0 1-5-1.37l-.36-.21-3.8 1 1.01-3.7-.24-.38a9.8 9.8 0 0 1-1.5-5.21c0-5.42 4.42-9.83 9.86-9.83a9.8 9.8 0 0 1 9.84 9.89c0 5.4-4.41 9.81-9.8 9.81zm5.39-7.36c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.29-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.65-2.05-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.88 1.22 3.08c.15.2 2.1 3.21 5.09 4.5.71.31 1.27.49 1.7.63.71.23 1.36.2 1.87.12.57-.09 1.75-.72 2-1.41.25-.7.25-1.3.17-1.42-.08-.13-.27-.2-.57-.35z"/></svg>
+</a>
+
+<script>
+const images=["v1.jpeg","v2.jpeg","v3.jpeg","v4.jpeg","v5.jpeg","v6.jpeg","v7.jpeg","v8.jpeg","v9.jpeg","v10.jpeg","v11.jpeg","v13.jpeg","v14.jpeg"];
+let imgIndex=0;
+const currentImg=document.getElementById("currentImg");
+
+function setImg(src){
+  imgIndex=images.indexOf(src);
+  currentImg.src=src;
+}
+function nextImg(){
+  imgIndex=(imgIndex+1)%images.length;
+  currentImg.src=images[imgIndex];
+}
+function prevImg(){
+  imgIndex=(imgIndex-1+images.length)%images.length;
+  currentImg.src=images[imgIndex];
+}
+setInterval(nextImg,3000);
+</script>
+
+</body>
+</html>
