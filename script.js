@@ -24,15 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   ];
 
-  const brandFooter = document.querySelector(".footer-box");
-  if (brandFooter && !brandFooter.querySelector(".social-links")) {
-    const socialLinks = document.createElement("div");
-    socialLinks.className = "social-links";
-    socialLinks.setAttribute("aria-label", "Social media links");
-    socialLinks.innerHTML = icons.map((icon) => `<a class="social-icon" href="${icon.href}" target="_blank" aria-label="${icon.label}">${icon.svg}</a>`).join("");
-    brandFooter.appendChild(socialLinks);
-  }
-
   document.querySelectorAll(".whatsapp-float").forEach((link) => {
     link.innerHTML = whatsappIcon;
   });
